@@ -8,7 +8,6 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/php:7.1.5-browsers
-      - run: echo "hello world"
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -19,6 +18,7 @@ jobs:
 
     steps:
       - checkout
+      - run: echo "hello world"
 
       # Download and cache dependencies
       - restore_cache:
