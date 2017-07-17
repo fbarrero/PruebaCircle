@@ -34,6 +34,6 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
         
       # run tests!
-      test:
-        override:
-          - echo "test"
+      - test:
+          override:
+            - echo "test"
