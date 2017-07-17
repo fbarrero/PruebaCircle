@@ -19,4 +19,8 @@ jobs:
     steps:
       - checkout
       - run: echo "hello world"
+      
+      test:
+        override:
+          - echo "test"
         
